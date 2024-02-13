@@ -1,33 +1,50 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4vdkqn5cqv43"]
+[gd_scene load_steps=4 format=3 uid="uid://c4vdkqn5cqv43"]
 
 [ext_resource type="Script" path="res://RulesButton.gd" id="1_k25n2"]
+[ext_resource type="Script" path="res://PlayButton.gd" id="1_lqvgf"]
+
+[sub_resource type="GDScript" id="GDScript_e558f"]
+script/source = "extends Node
+
+var tree = get_tree()
+"
 
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
+script = SubResource("GDScript_e558f")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 532.0
-offset_top = 270.0
-offset_right = 582.0
-offset_bottom = 371.0
+offset_left = 704.0
+offset_top = 456.0
+offset_right = 1248.0
+offset_bottom = 776.0
 
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_font_sizes/font_size = 36
 text = "Play"
+script = ExtResource("1_lqvgf")
 
 [node name="LoadButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_font_sizes/font_size = 35
 text = "Load"
 
 [node name="RulesButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_font_sizes/font_size = 35
 text = "Rules"
 script = ExtResource("1_k25n2")
 
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="VBoxContainer/PlayButton" method="_on_pressed"]
 [connection signal="pressed" from="VBoxContainer/RulesButton" to="VBoxContainer/RulesButton" method="_on_pressed"]
