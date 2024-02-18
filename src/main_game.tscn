@@ -1,25 +1,29 @@
 [gd_scene load_steps=3 format=3 uid="uid://cnnubawb1ag2h"]
 
-[ext_resource type="Script" path="res://ExitButton.gd" id="1_vg1gm"]
+[ext_resource type="Script" path="res://ExitButtonMainMenu.gd" id="1_rune3"]
 [ext_resource type="Script" path="res://SaveButton.gd" id="2_a4wn6"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="ColorRect" parent="CanvasLayer"]
 offset_left = -1.0
 offset_top = 1.0
-offset_right = 1916.0
-offset_bottom = 1084.0
+offset_right = 1921.0
+offset_bottom = 1081.0
 color = Color(0.92549, 0.92549, 0.92549, 1)
 
-[node name="Log" type="ColorRect" parent="."]
-offset_left = 1542.0
-offset_top = 2.0
-offset_right = 1916.0
-offset_bottom = 1077.0
+[node name="LogZone" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -374.0
+offset_bottom = 1078.0
+grow_horizontal = 0
 color = Color(0.8, 0.8, 0.8, 1)
 
-[node name="LogLabel" type="ColorRect" parent="Log"]
+[node name="LogLabel" type="ColorRect" parent="CanvasLayer/LogZone"]
 layout_mode = 0
 offset_left = 41.0
 offset_top = 15.0
@@ -27,7 +31,7 @@ offset_right = 338.0
 offset_bottom = 105.0
 color = Color(0.431373, 0.431373, 0.431373, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Log/LogLabel"]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LogZone/LogLabel"]
 layout_mode = 0
 offset_left = 106.0
 offset_top = 8.0
@@ -38,23 +42,39 @@ text = "Log"
 fit_content = true
 tab_size = 0
 
-[node name="ExitButton" type="Button" parent="."]
-offset_left = 1668.0
-offset_top = 981.0
-offset_right = 1814.0
-offset_bottom = 1055.0
+[node name="ExitButton" type="Button" parent="CanvasLayer/LogZone"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -266.0
+offset_top = -118.0
+offset_right = -120.0
+offset_bottom = -44.0
+grow_horizontal = 0
+grow_vertical = 0
 theme_override_font_sizes/font_size = 34
 text = "Exit"
-script = ExtResource("1_vg1gm")
+script = ExtResource("1_rune3")
 
-[node name="SaveButton" type="Button" parent="."]
-offset_left = 1666.0
-offset_top = 895.0
-offset_right = 1815.0
-offset_bottom = 964.0
+[node name="SaveButton" type="Button" parent="CanvasLayer/LogZone"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -268.0
+offset_top = -201.0
+offset_right = -119.0
+offset_bottom = -132.0
+grow_horizontal = 0
+grow_vertical = 0
 theme_override_font_sizes/font_size = 34
 text = "Save"
 script = ExtResource("2_a4wn6")
 
-[connection signal="pressed" from="ExitButton" to="ExitButton" method="_on_pressed"]
-[connection signal="pressed" from="SaveButton" to="SaveButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/LogZone/ExitButton" to="CanvasLayer/LogZone/ExitButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/LogZone/SaveButton" to="CanvasLayer/LogZone/SaveButton" method="_on_pressed"]
