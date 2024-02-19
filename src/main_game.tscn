@@ -29,103 +29,346 @@ texture = ExtResource("1_6br46")
 script = ExtResource("2_cvwsh")
 
 [node name="Row_1" type="Node2D" parent="CanvasLayer/Board"]
+position = Vector2(1, 1)
 
-[node name="Tile1" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+[node name="TileF" type="Node2D" parent="CanvasLayer/Board/Row_1"]
 position = Vector2(721, 924)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile1"]
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileF"]
 position = Vector2(-5.47998, 5.66516)
 scale = Vector2(0.988047, 0.987404)
 texture = ExtResource("5_1vwrq")
 
-[node name="Tile2" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+[node name="TileG" type="Node2D" parent="CanvasLayer/Board/Row_1"]
 position = Vector2(791, 885)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile2"]
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileG"]
 position = Vector2(5.48029, 5.66492)
 scale = Vector2(1.0023, 0.99447)
 texture = ExtResource("4_ct3wb")
 
-[node name="Tile3" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+[node name="TileH" type="Node2D" parent="CanvasLayer/Board/Row_1"]
 position = Vector2(864, 845)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile3"]
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileH"]
 position = Vector2(10.9607, 5.66504)
 texture = ExtResource("3_rtx7p")
 
-[node name="Tile4" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+[node name="TileI" type="Node2D" parent="CanvasLayer/Board/Row_1"]
 position = Vector2(937, 805)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="Tile5" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileI"]
+position = Vector2(5.48047, 5.66541)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
+
+[node name="TileK" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+position = Vector2(1010, 763)
+scale = Vector2(0.182214, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileK"]
+position = Vector2(-10.9763, 39.6571)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileL" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+position = Vector2(1081, 726)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileL"]
+position = Vector2(0.000488281, 5.66559)
+texture = ExtResource("3_rtx7p")
+
+[node name="TileE" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+position = Vector2(646, 882)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileE"]
+position = Vector2(10.9609, 16.9955)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileD" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+position = Vector2(577, 842)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileD"]
+position = Vector2(-5.48048, 22.6615)
+texture = ExtResource("3_rtx7p")
+
+[node name="TileC" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+position = Vector2(505, 802)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileC"]
+position = Vector2(-10.9609, 22.6612)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
+
+[node name="TileB" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+position = Vector2(427, 763)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileB"]
+position = Vector2(27.4028, 22.6614)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileA" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+position = Vector2(360, 722)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_1/TileA"]
+position = Vector2(0, 28.3265)
+texture = ExtResource("3_rtx7p")
+
+[node name="Row_4" type="Node2D" parent="CanvasLayer/Board"]
+position = Vector2(0, -237)
+
+[node name="TileF" type="Node2D" parent="CanvasLayer/Board/Row_4"]
 position = Vector2(721, 924)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="TileSprite" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile5"]
-position = Vector2(-3951.41, -5234.84)
-scale = Vector2(5.48046, 5.66541)
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileF"]
+position = Vector2(-5.47998, 5.66516)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
 
-[node name="Tile6" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+[node name="TileG" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(791, 885)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileG"]
+position = Vector2(5.48029, 5.66492)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileH" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(864, 845)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileH"]
+position = Vector2(10.9607, 5.66504)
+texture = ExtResource("3_rtx7p")
+
+[node name="TileI" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(937, 805)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileI"]
+position = Vector2(5.48047, 5.66541)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
+
+[node name="TileK" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(1010, 763)
+scale = Vector2(0.182214, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileK"]
+position = Vector2(-10.9763, 39.6571)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileL" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(1081, 726)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileL"]
+position = Vector2(0.000488281, 5.66559)
+texture = ExtResource("3_rtx7p")
+
+[node name="TileE" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(646, 882)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileE"]
+position = Vector2(10.9609, 16.9955)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileD" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(577, 842)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileD"]
+position = Vector2(-5.48048, 22.6615)
+texture = ExtResource("3_rtx7p")
+
+[node name="TileC" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(505, 802)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileC"]
+position = Vector2(-10.9609, 22.6612)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
+
+[node name="TileB" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(427, 763)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileB"]
+position = Vector2(27.4028, 22.6614)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileA" type="Node2D" parent="CanvasLayer/Board/Row_4"]
+position = Vector2(360, 722)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileA"]
+position = Vector2(0, 28.3265)
+texture = ExtResource("3_rtx7p")
+
+[node name="Row_7" type="Node2D" parent="CanvasLayer/Board"]
+position = Vector2(0, -478)
+
+[node name="TileF" type="Node2D" parent="CanvasLayer/Board/Row_7"]
 position = Vector2(721, 924)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="TileSprite" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile6"]
-position = Vector2(-3951.41, -5234.84)
-scale = Vector2(5.48046, 5.66541)
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileF"]
+position = Vector2(-5.47998, 5.66516)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
 
-[node name="Tile7" type="Node2D" parent="CanvasLayer/Board/Row_1"]
+[node name="TileG" type="Node2D" parent="CanvasLayer/Board/Row_7"]
+position = Vector2(791, 885)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileG"]
+position = Vector2(5.48029, 5.66492)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileH" type="Node2D" parent="CanvasLayer/Board/Row_7"]
+position = Vector2(864, 845)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileH"]
+position = Vector2(10.9607, 5.66504)
+texture = ExtResource("3_rtx7p")
+
+[node name="TileI" type="Node2D" parent="CanvasLayer/Board/Row_7"]
+position = Vector2(937, 805)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileI"]
+position = Vector2(5.48047, 5.66541)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
+
+[node name="TileK" type="Node2D" parent="CanvasLayer/Board/Row_7"]
+position = Vector2(1010, 763)
+scale = Vector2(0.182214, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileK"]
+position = Vector2(-10.9763, 39.6571)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileE" type="Node2D" parent="CanvasLayer/Board/Row_7"]
+position = Vector2(646, 882)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileE"]
+position = Vector2(10.9609, 16.9955)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="TileD" type="Node2D" parent="CanvasLayer/Board/Row_7"]
+position = Vector2(577, 842)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileD"]
+position = Vector2(-5.48048, 22.6615)
+texture = ExtResource("3_rtx7p")
+
+[node name="TileC" type="Node2D" parent="CanvasLayer/Board/Row_7"]
+position = Vector2(505, 802)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileC"]
+position = Vector2(-10.9609, 22.6612)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
+
+[node name="TileB" type="Node2D" parent="CanvasLayer/Board/Row_7"]
+position = Vector2(427, 763)
+scale = Vector2(0.182466, 0.17651)
+script = ExtResource("4_ehyxu")
+
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_7/TileB"]
+position = Vector2(27.4028, 22.6614)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
+
+[node name="Row_8" type="Node2D" parent="CanvasLayer/Board"]
+position = Vector2(0, -713)
+
+[node name="TileF" type="Node2D" parent="CanvasLayer/Board/Row_8"]
 position = Vector2(721, 924)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="TileSprite" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile7"]
-position = Vector2(-3951.41, -5234.84)
-scale = Vector2(5.48046, 5.66541)
+[node name="White-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_8/TileF"]
+position = Vector2(-5.47998, 5.66516)
+scale = Vector2(0.988047, 0.987404)
+texture = ExtResource("5_1vwrq")
 
-[node name="Tile8" type="Node2D" parent="CanvasLayer/Board/Row_1"]
-position = Vector2(721, 924)
+[node name="TileG" type="Node2D" parent="CanvasLayer/Board/Row_8"]
+position = Vector2(791, 885)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="TileSprite" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile8"]
-position = Vector2(-3951.41, -5234.84)
-scale = Vector2(5.48046, 5.66541)
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_8/TileG"]
+position = Vector2(5.48029, 5.66492)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
 
-[node name="Tile9" type="Node2D" parent="CanvasLayer/Board/Row_1"]
-position = Vector2(721, 924)
+[node name="TileE" type="Node2D" parent="CanvasLayer/Board/Row_8"]
+position = Vector2(646, 882)
 scale = Vector2(0.182466, 0.17651)
 script = ExtResource("4_ehyxu")
 
-[node name="TileSprite" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile9"]
-position = Vector2(-3951.41, -5234.84)
-scale = Vector2(5.48046, 5.66541)
-
-[node name="Tile10" type="Node2D" parent="CanvasLayer/Board/Row_1"]
-position = Vector2(721, 924)
-scale = Vector2(0.182466, 0.17651)
-script = ExtResource("4_ehyxu")
-
-[node name="TileSprite" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile10"]
-position = Vector2(-3951.41, -5234.84)
-scale = Vector2(5.48046, 5.66541)
-
-[node name="Tile11" type="Node2D" parent="CanvasLayer/Board/Row_1"]
-position = Vector2(718, 922)
-scale = Vector2(0.182466, 0.17651)
-script = ExtResource("4_ehyxu")
-
-[node name="TileSprite" type="Sprite2D" parent="CanvasLayer/Board/Row_1/Tile11"]
-position = Vector2(-3951.41, -5234.84)
-scale = Vector2(5.48046, 5.66541)
+[node name="Gray-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_8/TileE"]
+position = Vector2(10.9609, 16.9955)
+scale = Vector2(1.0023, 0.99447)
+texture = ExtResource("4_ct3wb")
 
 [node name="LogZone" type="ColorRect" parent="CanvasLayer"]
 anchors_preset = 1
@@ -190,17 +433,17 @@ text = "Save"
 script = ExtResource("2_a4wn6")
 
 [node name="Gray-tile" type="Sprite2D" parent="."]
-position = Vector2(-356, 713)
+position = Vector2(-379, 708)
 scale = Vector2(0.182886, 0.175534)
 texture = ExtResource("4_ct3wb")
 
 [node name="White-tile" type="Sprite2D" parent="."]
-position = Vector2(-343, 1079)
+position = Vector2(-456, 1008)
 scale = Vector2(0.180285, 0.174287)
 texture = ExtResource("5_1vwrq")
 
 [node name="Dark-tile" type="Sprite2D" parent="."]
-position = Vector2(-338, 947)
+position = Vector2(-362, 877)
 scale = Vector2(0.182466, 0.17651)
 texture = ExtResource("3_rtx7p")
 
