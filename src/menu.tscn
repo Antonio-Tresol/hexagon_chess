@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4vdkqn5cqv43"]
+[gd_scene load_steps=6 format=3 uid="uid://c4vdkqn5cqv43"]
 
 [ext_resource type="Script" path="res://RulesButton.gd" id="1_k25n2"]
 [ext_resource type="Script" path="res://PlayButton.gd" id="1_lqvgf"]
+[ext_resource type="FontFile" uid="uid://ve14ml4vhkeh" path="res://assets/Fonts/PeaberryBase.ttf" id="1_o5pt7"]
 [ext_resource type="Script" path="res://ExitButton.gd" id="3_imy13"]
 
 [sub_resource type="GDScript" id="GDScript_e558f"]
@@ -44,6 +45,7 @@ alignment = 1
 [node name="PlayButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_o5pt7")
 theme_override_font_sizes/font_size = 36
 text = "Play"
 script = ExtResource("1_lqvgf")
@@ -51,12 +53,14 @@ script = ExtResource("1_lqvgf")
 [node name="LoadButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_o5pt7")
 theme_override_font_sizes/font_size = 35
 text = "Load"
 
 [node name="RulesButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_o5pt7")
 theme_override_font_sizes/font_size = 35
 text = "Rules"
 script = ExtResource("1_k25n2")
@@ -64,6 +68,7 @@ script = ExtResource("1_k25n2")
 [node name="ExitButton" type="Button" parent="CanvasLayer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_o5pt7")
 theme_override_font_sizes/font_size = 35
 text = "Exit game
 "

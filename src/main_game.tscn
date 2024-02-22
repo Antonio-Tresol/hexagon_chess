@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cnnubawb1ag2h"]
+[gd_scene load_steps=10 format=3 uid="uid://cnnubawb1ag2h"]
 
 [ext_resource type="Texture2D" uid="uid://c0o2tphdvi5ld" path="res://assets/800px-Glinski_Chess_Rook.svg.png" id="1_6br46"]
 [ext_resource type="Script" path="res://ExitButtonMainMenu.gd" id="1_rune3"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://by5u42y37vhmr" path="res://assets/gray-tile.png" id="4_ct3wb"]
 [ext_resource type="Script" path="res://Tile.gd" id="4_ehyxu"]
 [ext_resource type="Texture2D" uid="uid://b71hvdl1ypsij" path="res://assets/white-tile.png" id="5_1vwrq"]
+[ext_resource type="FontFile" uid="uid://ve14ml4vhkeh" path="res://assets/Fonts/PeaberryBase.ttf" id="7_ke1np"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -21,6 +22,7 @@ offset_bottom = 1081.0
 color = Color(0.92549, 0.92549, 0.92549, 1)
 
 [node name="AuxGuide" type="Sprite2D" parent="CanvasLayer"]
+visible = false
 position = Vector2(720, 545)
 scale = Vector2(1.19875, 1.14196)
 texture = ExtResource("1_6br46")
@@ -137,6 +139,26 @@ script = ExtResource("4_ehyxu")
 position = Vector2(0, 28.3265)
 texture = ExtResource("3_rtx7p")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_1"]
+offset_left = 411.0
+offset_top = -251.0
+offset_right = 437.0
+offset_bottom = -211.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "1"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_1"]
+offset_left = -438.0
+offset_top = -254.0
+offset_right = -412.0
+offset_bottom = -214.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "1"
+
 [node name="Row_2" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(723, 840)
 
@@ -147,7 +169,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_2/TileF"]
 position = Vector2(-5.48047, 33.9919)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileG" type="Node2D" parent="CanvasLayer/Board/Row_2"]
@@ -177,7 +198,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_2/TileI"]
 position = Vector2(-10.9609, 33.9907)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileK" type="Node2D" parent="CanvasLayer/Board/Row_2"]
@@ -227,7 +247,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_2/TileC"]
 position = Vector2(-5.48047, 45.323)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileB" type="Node2D" parent="CanvasLayer/Board/Row_2"]
@@ -270,7 +289,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_3/TileG"]
 position = Vector2(16.4414, 5.66498)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileH" type="Node2D" parent="CanvasLayer/Board/Row_3"]
@@ -320,7 +338,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_3/TileE"]
 position = Vector2(27.4023, 16.9961)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileD" type="Node2D" parent="CanvasLayer/Board/Row_3"]
@@ -350,7 +367,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_3/TileB"]
 position = Vector2(38.3645, 22.6611)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileA" type="Node2D" parent="CanvasLayer/Board/Row_3"]
@@ -482,7 +498,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_5/TileF"]
 position = Vector2(-5.48047, 33.9919)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileG" type="Node2D" parent="CanvasLayer/Board/Row_5"]
@@ -512,7 +527,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_5/TileI"]
 position = Vector2(-5.48047, 28.3252)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileK" type="Node2D" parent="CanvasLayer/Board/Row_5"]
@@ -562,7 +576,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_5/TileC"]
 position = Vector2(-5.48047, 45.323)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileB" type="Node2D" parent="CanvasLayer/Board/Row_5"]
@@ -605,7 +618,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_6/TileG"]
 position = Vector2(16.4414, 5.66498)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileH" type="Node2D" parent="CanvasLayer/Board/Row_6"]
@@ -655,7 +667,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_6/TileE"]
 position = Vector2(27.4023, 16.9961)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileD" type="Node2D" parent="CanvasLayer/Board/Row_6"]
@@ -685,7 +696,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_6/TileB"]
 position = Vector2(38.3645, 22.6611)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileA" type="Node2D" parent="CanvasLayer/Board/Row_6"]
@@ -799,7 +809,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_8/TileF"]
 position = Vector2(-5.48047, 33.9919)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileG" type="Node2D" parent="CanvasLayer/Board/Row_8"]
@@ -829,7 +838,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_8/TileI"]
 position = Vector2(-5.48047, 28.3252)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileE" type="Node2D" parent="CanvasLayer/Board/Row_8"]
@@ -859,7 +867,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_8/TileC"]
 position = Vector2(-5.48047, 45.323)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="Row_9" type="Node2D" parent="CanvasLayer/Board"]
@@ -882,7 +889,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_9/TileG"]
 position = Vector2(16.4414, 5.66498)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileH" type="Node2D" parent="CanvasLayer/Board/Row_9"]
@@ -895,21 +901,6 @@ position = Vector2(10.9624, 11.33)
 scale = Vector2(0.988047, 0.987406)
 texture = ExtResource("5_1vwrq")
 
-[node name="TileI" type="Node2D" parent="CanvasLayer/Board/Row_9"]
-position = Vector2(213, -114)
-scale = Vector2(0.182466, 0.17651)
-script = ExtResource("4_ehyxu")
-
-[node name="TileK" type="Node2D" parent="CanvasLayer/Board/Row_9"]
-position = Vector2(286, -156)
-scale = Vector2(0.182214, 0.17651)
-script = ExtResource("4_ehyxu")
-
-[node name="TileL" type="Node2D" parent="CanvasLayer/Board/Row_9"]
-position = Vector2(357, -193)
-scale = Vector2(0.182466, 0.17651)
-script = ExtResource("4_ehyxu")
-
 [node name="TileE" type="Node2D" parent="CanvasLayer/Board/Row_9"]
 position = Vector2(-78, -36.9999)
 scale = Vector2(0.182466, 0.17651)
@@ -917,7 +908,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_9/TileE"]
 position = Vector2(27.4023, 16.9961)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="TileD" type="Node2D" parent="CanvasLayer/Board/Row_9"]
@@ -973,7 +963,6 @@ script = ExtResource("4_ehyxu")
 
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_11/TileF"]
 position = Vector2(-5.48047, 33.9919)
-scale = Vector2(1, 1)
 texture = ExtResource("3_rtx7p")
 
 [node name="LogZone" type="ColorRect" parent="CanvasLayer"]
@@ -995,10 +984,11 @@ color = Color(0.431373, 0.431373, 0.431373, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/LogZone/LogLabel"]
 layout_mode = 0
-offset_left = 106.0
-offset_top = 8.0
-offset_right = 183.0
-offset_bottom = 69.0
+offset_left = 104.0
+offset_top = 23.0
+offset_right = 212.0
+offset_bottom = 84.0
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
 theme_override_font_sizes/normal_font_size = 44
 text = "Log"
 fit_content = true
@@ -1017,6 +1007,7 @@ offset_right = -120.0
 offset_bottom = -44.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_fonts/font = ExtResource("7_ke1np")
 theme_override_font_sizes/font_size = 34
 text = "Exit"
 script = ExtResource("1_rune3")
@@ -1034,6 +1025,7 @@ offset_right = -119.0
 offset_bottom = -132.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_fonts/font = ExtResource("7_ke1np")
 theme_override_font_sizes/font_size = 34
 text = "Save"
 script = ExtResource("2_a4wn6")
