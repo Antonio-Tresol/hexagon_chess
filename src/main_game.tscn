@@ -140,20 +140,20 @@ position = Vector2(0, 28.3265)
 texture = ExtResource("3_rtx7p")
 
 [node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_1"]
-offset_left = 411.0
-offset_top = -251.0
-offset_right = 437.0
-offset_bottom = -211.0
+offset_left = 401.0
+offset_top = -249.0
+offset_right = 427.0
+offset_bottom = -209.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("7_ke1np")
 theme_override_font_sizes/normal_font_size = 39
 text = "1"
 
 [node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_1"]
-offset_left = -438.0
-offset_top = -254.0
-offset_right = -412.0
-offset_bottom = -214.0
+offset_left = -432.0
+offset_top = -250.0
+offset_right = -406.0
+offset_bottom = -210.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("7_ke1np")
 theme_override_font_sizes/normal_font_size = 39
@@ -269,6 +269,26 @@ position = Vector2(-5.48047, 39.6572)
 scale = Vector2(1.0023, 0.99447)
 texture = ExtResource("4_ct3wb")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_2"]
+offset_left = 401.0
+offset_top = -243.0
+offset_right = 427.0
+offset_bottom = -203.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "2"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_2"]
+offset_left = -433.0
+offset_top = -248.0
+offset_right = -407.0
+offset_bottom = -208.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "2"
+
 [node name="Row_3" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(723, 759)
 
@@ -379,6 +399,26 @@ position = Vector2(5.48071, 39.6576)
 scale = Vector2(0.988047, 0.987406)
 texture = ExtResource("5_1vwrq")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_3"]
+offset_left = 400.0
+offset_top = -240.0
+offset_right = 426.0
+offset_bottom = -200.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "3"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_3"]
+offset_left = -428.0
+offset_top = -242.0
+offset_right = -402.0
+offset_bottom = -202.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "3"
+
 [node name="Row_4" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(723, 687)
 
@@ -487,6 +527,26 @@ script = ExtResource("4_ehyxu")
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_4/TileA"]
 position = Vector2(0, 28.3265)
 texture = ExtResource("3_rtx7p")
+
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_4"]
+offset_left = 397.0
+offset_top = -252.0
+offset_right = 423.0
+offset_bottom = -212.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "4"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_4"]
+offset_left = -431.0
+offset_top = -252.0
+offset_right = -405.0
+offset_bottom = -212.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "4"
 
 [node name="Row_5" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(723, 603)
@@ -598,6 +658,38 @@ position = Vector2(-5.48047, 39.6572)
 scale = Vector2(1.0023, 0.99447)
 texture = ExtResource("4_ct3wb")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_5"]
+offset_left = 402.0
+offset_top = -243.0
+offset_right = 428.0
+offset_bottom = -203.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "5
+"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_5"]
+offset_left = -432.0
+offset_top = -246.0
+offset_right = -406.0
+offset_bottom = -206.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "5
+"
+
+[node name="Letter" type="RichTextLabel" parent="CanvasLayer/Board/Row_5"]
+offset_left = -87.0
+offset_top = 321.0
+offset_right = -61.0
+offset_bottom = 361.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "e"
+
 [node name="Row_6" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(723, 523)
 
@@ -708,6 +800,26 @@ position = Vector2(5.48071, 39.6576)
 scale = Vector2(0.988047, 0.987406)
 texture = ExtResource("5_1vwrq")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_6"]
+offset_left = 400.0
+offset_top = -240.0
+offset_right = 426.0
+offset_bottom = -200.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "6"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_6"]
+offset_left = -431.0
+offset_top = -239.0
+offset_right = -405.0
+offset_bottom = -199.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "6"
+
 [node name="Row_7" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(720, 450)
 
@@ -799,6 +911,26 @@ position = Vector2(27.4028, 22.6614)
 scale = Vector2(1.0023, 0.99447)
 texture = ExtResource("4_ct3wb")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_7"]
+offset_left = 335.0
+offset_top = -203.0
+offset_right = 361.0
+offset_bottom = -163.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "7"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_7"]
+offset_left = -355.0
+offset_top = -203.0
+offset_right = -329.0
+offset_bottom = -163.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "7"
+
 [node name="Row_8" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(722, 362)
 
@@ -869,6 +1001,26 @@ script = ExtResource("4_ehyxu")
 position = Vector2(-5.48047, 45.323)
 texture = ExtResource("3_rtx7p")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_8"]
+offset_left = 261.0
+offset_top = -157.0
+offset_right = 287.0
+offset_bottom = -117.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "8"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_8"]
+offset_left = -289.0
+offset_top = -157.0
+offset_right = -263.0
+offset_bottom = -117.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "8"
+
 [node name="Row_9" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(723, 285)
 
@@ -920,6 +1072,26 @@ position = Vector2(5.48047, 33.9924)
 scale = Vector2(0.988047, 0.987406)
 texture = ExtResource("5_1vwrq")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_9"]
+offset_left = 188.0
+offset_top = -119.0
+offset_right = 214.0
+offset_bottom = -79.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "9"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_9"]
+offset_left = -216.0
+offset_top = -119.0
+offset_right = -190.0
+offset_bottom = -79.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "9"
+
 [node name="Row_10" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(721, 210)
 
@@ -953,6 +1125,26 @@ position = Vector2(10.9609, 16.9955)
 scale = Vector2(1.0023, 0.99447)
 texture = ExtResource("4_ct3wb")
 
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_10"]
+offset_left = 117.0
+offset_top = -83.0
+offset_right = 171.0
+offset_bottom = -43.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "10"
+
+[node name="Number3" type="RichTextLabel" parent="CanvasLayer/Board/Row_10"]
+offset_left = -170.0
+offset_top = -83.0
+offset_right = -116.0
+offset_bottom = -43.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "10"
+
 [node name="Row_11" type="Node2D" parent="CanvasLayer/Board"]
 position = Vector2(723, 122)
 
@@ -964,6 +1156,139 @@ script = ExtResource("4_ehyxu")
 [node name="Dark-tile" type="Sprite2D" parent="CanvasLayer/Board/Row_11/TileF"]
 position = Vector2(-5.48047, 33.9919)
 texture = ExtResource("3_rtx7p")
+
+[node name="Number1" type="RichTextLabel" parent="CanvasLayer/Board/Row_11"]
+offset_left = 47.0
+offset_top = -38.0
+offset_right = 101.0
+offset_bottom = 2.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "11"
+
+[node name="Number2" type="RichTextLabel" parent="CanvasLayer/Board/Row_11"]
+offset_left = -99.0
+offset_top = -36.0
+offset_right = -45.0
+offset_bottom = 4.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "11"
+
+[node name="Columns" type="Node2D" parent="CanvasLayer/Board"]
+
+[node name="Column_A" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 345.0
+offset_top = 768.0
+offset_right = 371.0
+offset_bottom = 808.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "a"
+
+[node name="Column_B" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 419.0
+offset_top = 807.0
+offset_right = 445.0
+offset_bottom = 847.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "b"
+
+[node name="Column_C" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 490.0
+offset_top = 843.0
+offset_right = 516.0
+offset_bottom = 883.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "c"
+
+[node name="Column_D" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 561.0
+offset_top = 887.0
+offset_right = 587.0
+offset_bottom = 927.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "d"
+
+[node name="Column_E" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 636.0
+offset_top = 924.0
+offset_right = 662.0
+offset_bottom = 964.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "e"
+
+[node name="Column_F" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 710.0
+offset_top = 970.0
+offset_right = 736.0
+offset_bottom = 1010.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "f
+"
+
+[node name="Column_G" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 782.0
+offset_top = 921.0
+offset_right = 808.0
+offset_bottom = 961.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "g"
+
+[node name="Column_H" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 853.0
+offset_top = 885.0
+offset_right = 879.0
+offset_bottom = 925.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "h"
+
+[node name="Column_I" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 927.0
+offset_top = 846.0
+offset_right = 953.0
+offset_bottom = 886.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "i"
+
+[node name="Column_J" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 995.0
+offset_top = 808.0
+offset_right = 1021.0
+offset_bottom = 848.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "j"
+
+[node name="Column_K" type="RichTextLabel" parent="CanvasLayer/Board/Columns"]
+offset_left = 1071.0
+offset_top = 767.0
+offset_right = 1097.0
+offset_bottom = 807.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("7_ke1np")
+theme_override_font_sizes/normal_font_size = 39
+text = "k"
 
 [node name="LogZone" type="ColorRect" parent="CanvasLayer"]
 anchors_preset = 1
@@ -1029,21 +1354,6 @@ theme_override_fonts/font = ExtResource("7_ke1np")
 theme_override_font_sizes/font_size = 34
 text = "Save"
 script = ExtResource("2_a4wn6")
-
-[node name="Gray-tile" type="Sprite2D" parent="."]
-position = Vector2(-364, 644)
-scale = Vector2(0.182886, 0.175534)
-texture = ExtResource("4_ct3wb")
-
-[node name="White-tile" type="Sprite2D" parent="."]
-position = Vector2(-273, 885)
-scale = Vector2(0.180285, 0.174287)
-texture = ExtResource("5_1vwrq")
-
-[node name="Dark-tile" type="Sprite2D" parent="."]
-position = Vector2(-245, 698)
-scale = Vector2(0.182466, 0.17651)
-texture = ExtResource("3_rtx7p")
 
 [connection signal="pressed" from="CanvasLayer/LogZone/ExitButton" to="CanvasLayer/LogZone/ExitButton" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/LogZone/SaveButton" to="CanvasLayer/LogZone/SaveButton" method="_on_pressed"]
