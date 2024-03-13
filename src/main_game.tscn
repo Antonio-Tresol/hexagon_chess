@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cnnubawb1ag2h"]
+[gd_scene load_steps=22 format=3 uid="uid://cnnubawb1ag2h"]
 
 [ext_resource type="Texture2D" uid="uid://c0o2tphdvi5ld" path="res://assets/800px-Glinski_Chess_Rook.svg.png" id="1_6br46"]
 [ext_resource type="Script" path="res://ExitButtonMainMenu.gd" id="1_rune3"]
@@ -9,6 +9,18 @@
 [ext_resource type="Script" path="res://Tile.gd" id="4_ehyxu"]
 [ext_resource type="Texture2D" uid="uid://b71hvdl1ypsij" path="res://assets/white-tile.png" id="5_1vwrq"]
 [ext_resource type="FontFile" uid="uid://ve14ml4vhkeh" path="res://assets/Fonts/PeaberryBase.ttf" id="7_ke1np"]
+[ext_resource type="Texture2D" uid="uid://rq0ivg201k1i" path="res://assets/pawn.png" id="8_i5svo"]
+[ext_resource type="Texture2D" uid="uid://cnyreec235mra" path="res://assets/bishop.png" id="9_okpf1"]
+[ext_resource type="Texture2D" uid="uid://dkk2bgq838xk" path="res://assets/queen.png" id="10_u5xfq"]
+[ext_resource type="Texture2D" uid="uid://dj4hddmdvwrdb" path="res://assets/king.png" id="11_jawvn"]
+[ext_resource type="Texture2D" uid="uid://bwx8cqlyc6vo4" path="res://assets/knight.png" id="12_ohipm"]
+[ext_resource type="Texture2D" uid="uid://wlo2kvntfmqo" path="res://assets/rook.png" id="13_ecpag"]
+[ext_resource type="Texture2D" uid="uid://rwtoepkysu45" path="res://assets/pawn1.png" id="14_nbi05"]
+[ext_resource type="Texture2D" uid="uid://bduvxrpwneo8x" path="res://assets/bishop1.png" id="15_n1ojp"]
+[ext_resource type="Texture2D" uid="uid://cfbuqkurh0ucc" path="res://assets/queen1.png" id="16_4eyge"]
+[ext_resource type="Texture2D" uid="uid://bskjnvixery8l" path="res://assets/king1.png" id="17_743uc"]
+[ext_resource type="Texture2D" uid="uid://bu7d12l36645e" path="res://assets/knight1.png" id="18_q333n"]
+[ext_resource type="Texture2D" uid="uid://obo0iu1afbtu" path="res://assets/rook1.png" id="19_waa3k"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -1289,6 +1301,257 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("7_ke1np")
 theme_override_font_sizes/normal_font_size = 39
 text = "k"
+
+[node name="White_pieces" type="Node2D" parent="CanvasLayer/Board"]
+
+[node name="Pawn_2" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(429, 763)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_2"]
+position = Vector2(-1, 0)
+texture = ExtResource("8_i5svo")
+
+[node name="Pawn_3" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(504, 723)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_3"]
+position = Vector2(0, -2)
+texture = ExtResource("8_i5svo")
+
+[node name="Pawn_4" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(577, 683)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_4"]
+texture = ExtResource("8_i5svo")
+
+[node name="Pawn_5" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(648, 647)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_5"]
+position = Vector2(0, -7)
+texture = ExtResource("8_i5svo")
+
+[node name="Pawn_6" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(720, 609)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_6"]
+position = Vector2(1, -3)
+texture = ExtResource("8_i5svo")
+
+[node name="Pawn_7" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(793, 648)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_7"]
+position = Vector2(0, -6)
+texture = ExtResource("8_i5svo")
+
+[node name="Pawn_8" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(864, 687)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_8"]
+position = Vector2(1, -5)
+texture = ExtResource("8_i5svo")
+
+[node name="Pawn_9" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(937, 726)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_9"]
+position = Vector2(0, -4)
+texture = ExtResource("8_i5svo")
+
+[node name="Pawn_10" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(1012, 768)
+
+[node name="Pawn" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Pawn_10"]
+position = Vector2(-2, -2)
+texture = ExtResource("8_i5svo")
+
+[node name="Bishop_1" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(721, 924)
+
+[node name="Bishop" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Bishop_1"]
+position = Vector2(0, -1)
+texture = ExtResource("9_okpf1")
+
+[node name="Bishop_2" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(722, 842)
+
+[node name="Bishop" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Bishop_2"]
+position = Vector2(0, -1)
+texture = ExtResource("9_okpf1")
+
+[node name="Bishop_3" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(723, 764)
+
+[node name="Bishop" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Bishop_3"]
+position = Vector2(-2, -1)
+texture = ExtResource("9_okpf1")
+
+[node name="Queen" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(646, 882)
+
+[node name="Queen" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Queen"]
+texture = ExtResource("10_u5xfq")
+
+[node name="King" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(793, 884)
+
+[node name="King" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/King"]
+position = Vector2(-2, 1)
+texture = ExtResource("11_jawvn")
+
+[node name="Knight_1" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(579, 842)
+
+[node name="Knight" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Knight_1"]
+position = Vector2(-1, 0)
+texture = ExtResource("12_ohipm")
+
+[node name="Knight_2" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(865, 846)
+
+[node name="Knight" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Knight_2"]
+position = Vector2(3, -1)
+texture = ExtResource("12_ohipm")
+
+[node name="Rook_1" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(505, 803)
+
+[node name="Rook" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Rook_1"]
+position = Vector2(-1, -1)
+texture = ExtResource("13_ecpag")
+
+[node name="Rook_2" type="Node2D" parent="CanvasLayer/Board/White_pieces"]
+position = Vector2(938, 806)
+
+[node name="Rook" type="Sprite2D" parent="CanvasLayer/Board/White_pieces/Rook_2"]
+position = Vector2(2, -2)
+texture = ExtResource("13_ecpag")
+
+[node name="Black_pieces" type="Node2D" parent="CanvasLayer/Board"]
+
+[node name="Pawn_1" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(429, 286)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_1"]
+position = Vector2(1, -1)
+texture = ExtResource("14_nbi05")
+
+[node name="Pawn_2" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(504, 326)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_2"]
+texture = ExtResource("14_nbi05")
+
+[node name="Pawn_3" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(576, 364)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_3"]
+position = Vector2(1, 0)
+texture = ExtResource("14_nbi05")
+
+[node name="Pawn_4" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(647, 405)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_4"]
+texture = ExtResource("14_nbi05")
+
+[node name="Pawn_5" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(720, 446)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_5"]
+texture = ExtResource("14_nbi05")
+
+[node name="Pawn_6" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(791, 408)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_6"]
+position = Vector2(1, -1)
+texture = ExtResource("14_nbi05")
+
+[node name="Pawn_7" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(863, 367)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_7"]
+position = Vector2(2, 0)
+texture = ExtResource("14_nbi05")
+
+[node name="Pawn_8" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(937, 327)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_8"]
+position = Vector2(1, 0)
+texture = ExtResource("14_nbi05")
+
+[node name="Pawn_9" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(1010, 290)
+
+[node name="Pawn1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Pawn_9"]
+position = Vector2(0, -2)
+texture = ExtResource("14_nbi05")
+
+[node name="Bishop_1" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(722, 127)
+
+[node name="Bishop1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Bishop_1"]
+position = Vector2(1, -2)
+texture = ExtResource("15_n1ojp")
+
+[node name="Bishop_2" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(721, 210)
+
+[node name="Bishop1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Bishop_2"]
+position = Vector2(0, -3)
+texture = ExtResource("15_n1ojp")
+
+[node name="Bishop_3" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(721, 287)
+
+[node name="Bishop1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Bishop_3"]
+position = Vector2(1, 0)
+texture = ExtResource("15_n1ojp")
+
+[node name="Queen" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(647, 167)
+
+[node name="Queen1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Queen"]
+position = Vector2(2, -3)
+texture = ExtResource("16_4eyge")
+
+[node name="King" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(791, 171)
+
+[node name="King1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/King"]
+position = Vector2(2, -4)
+texture = ExtResource("17_743uc")
+
+[node name="Knight_1" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(574, 210)
+
+[node name="Knight1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Knight_1"]
+position = Vector2(3, -1)
+texture = ExtResource("18_q333n")
+
+[node name="Knight_2" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(863, 210)
+
+[node name="Knight1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Knight_2"]
+position = Vector2(2, -2)
+texture = ExtResource("18_q333n")
+
+[node name="Rook_1" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(503, 246)
+
+[node name="Rook1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Rook_1"]
+position = Vector2(1, -1)
+texture = ExtResource("19_waa3k")
+
+[node name="Rook_2" type="Node2D" parent="CanvasLayer/Board/Black_pieces"]
+position = Vector2(937, 244)
+
+[node name="Rook1" type="Sprite2D" parent="CanvasLayer/Board/Black_pieces/Rook_2"]
+position = Vector2(1, -1)
+texture = ExtResource("19_waa3k")
 
 [node name="LogZone" type="ColorRect" parent="CanvasLayer"]
 anchors_preset = 1
